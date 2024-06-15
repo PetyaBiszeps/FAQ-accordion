@@ -1,0 +1,172 @@
+@import "css/fonts.css";
+@import "css/colors.css";
+
+html, body {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--clr-pink);
+}
+
+body img {
+    width: 100%;
+
+    position: absolute;
+    z-index: -1;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FAQ {
+    width: 600px;
+    background-color: var(--clr-white);
+
+    border-radius: 20px;
+    box-shadow: 20px 20px 35px -35px var(--clr-dark-purple);
+
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+.FAQ__header {
+    display: flex;
+    gap: 25px;
+}
+
+.FAQ__star {
+    width: 35px;
+
+    position: relative;
+    z-index: 0;
+}
+
+.FAQ__h1 {
+    margin: 0;
+
+    font-size: 44px;
+    font-weight: 800;
+    color: var(--clr-dark-purple);
+}
+
+.FAQ__article {
+    margin-top: 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.FAQ__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.FAQ__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.FAQ__question img {
+    width: 30px;
+
+    position: relative;
+    z-index: 0;
+
+    cursor: pointer;
+}
+
+.FAQ__icons {
+
+}
+
+.plus {
+    display: block;
+}
+
+.minus {
+    display: none;
+}
+
+.FAQ__question p {
+    color: var(--clr-dark-purple);
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.FAQ__question p:hover {
+    color: var(--clr-active-link);
+}
+
+.FAQ__answer {
+    display: none;
+    color: var(--clr-gray-purple);
+    animation: fade-in 400ms forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.FAQ__border-line {
+    border-bottom: 1px solid var(--clr-pink);
+}
+
+
+/* --- Mobile Version --- */
+
+@media (max-width: 720px) {
+    #bg {
+        content: url("assets/images/background-pattern-mobile.svg");
+    }
+
+    .FAQ {
+        width: 85%;
+        border-radius: 10px;
+
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .FAQ__star {
+        width: 25px;
+    }
+
+    .FAQ__h1 {
+        font-size: 33px;
+        font-weight: 700;
+    }
+
+    .FAQ__article {
+        margin-top: 15px;
+        gap: 15px;
+    }
+
+    .FAQ__question {
+        gap: 25px;
+    }
+
+    .FAQ__answer {
+        font-size: 14px;
+    }
+}
