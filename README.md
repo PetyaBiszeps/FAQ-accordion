@@ -28,4 +28,4 @@ JS if you already know something about both HTML and CSS. At least that's how it
 
 ### Project-Link
 
-Link
+https://petyabiszeps.github.io/FAQ-accordion/

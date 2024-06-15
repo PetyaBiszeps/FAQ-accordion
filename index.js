@@ -19,7 +19,3 @@ function toggleElementDisplay(elementId, iconId) {
         icon.src = minusIcon;
     }
 }
-
-function MobileBG() {
-
-}
